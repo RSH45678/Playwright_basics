@@ -1,0 +1,2 @@
+AJAX Content Loaded
+This block was inserted after an asynchronous call finished — it did not exist when the page loaded.

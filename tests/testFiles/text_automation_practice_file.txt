@@ -1,0 +1,107 @@
+AUTOMATION PRACTICE FILE - TEXT FORMAT
+=====================================
+Document ID: TXT-99482
+Date: October 15, 2026
+
+1. INTRODUCTION
+This file is designed for automated testing scripts, web scraping, data extraction, and file-reading assertions (Selenium, Playwright, Python scripts, etc.).
+
+2. TEST DATA SECTIONS
+--------------------
+[User Credentials]
+Username: automation_user_01
+Access Key: Secr3tP@ssw0rd!
+Role: QA Engineer
+
+[Status Codes & Thresholds]
+HTTP_SUCCESS = 200
+HTTP_UNAUTHORIZED = 401
+TIMEOUT_LIMIT = 30 seconds
+RETRY_ATTEMPTS = 3
+
+[Sample Table Data]
+ID | Item Name      | Category   | Price ($) | In Stock
+-------------------------------------------------------
+01 | Wireless Mouse | Hardware   | 29.99     | True
+02 | Mechanical Key | Hardware   | 89.50     | True
+03 | API Testing Gt | Software   | 45.00     | False
+04 | Cloud Monitor  | SaaS       | 120.00    | True
+
+3. DYNAMIC STRINGS & SPECIAL CHARACTERS
+Special symbols for encoding and regex validation tests:
+!@#$%^&*()_+-=[]{}|;':",./<>?
+Unicode check: 🚀 Automation Testing 🤖
+
+4. CONCLUSION
+End of file marker reached successfully.
+EOF_MARKER_99482
+```gui
+```markdown:Word Automation Practice File (Markdown):automation_sample.docx.md
+# AUTOMATION PRACTICE DOCUMENT (DOCX FORMAT SIMULATION)
+
+**Author:** QA Automation Team  
+**Version:** 1.2.0  
+**Target Application:** Document Parsers and RPA Bots  
+
+---
+
+## Executive Summary
+This document serves as a structured mock Word document for testing file-parsing libraries (like `python-docx`) and automated text-extraction workflows.
+
+### Table 1: Feature Checklist for Automation
+| Feature Name | Status | Priority | Automated By |
+| :--- | :--- | :--- | :--- |
+| Login Module | Passed | High | Selenium WebDriver |
+| Payment Gateway | Pending | Critical | Cypress |
+| Report Export | In Progress | Medium | Playwright |
+
+---
+
+## Paragraph Content for NLP and Extraction Tests
+Automated software testing is crucial for ensuring software quality before deployment. By leveraging tools such as Appium for mobile devices and Selenium for web browsers, teams can execute regression suites overnight. 
+
+> *Note for Automation Engineers:* Always ensure explicit waits are used instead of hardcoded sleeps to prevent flaky test failures caused by network latency or slow rendering DOM elements.
+
+### Key Metrics to Validate
+1. **Execution Time:** Must remain under 15 minutes for core smoke tests.
+2. **Pass Rate:** Minimum threshold of 98.5% across all target browsers (Chrome, Firefox, Safari, Edge).
+3. **Flakiness Index:** Less than 1% across 50 consecutive runs.
+
+*End of Document Body.*
+```gui
+```markdown:PDF Automation Practice File:automation_sample.pdf.txt
+--------------------------------------------------------------------------------
+CONFIDENTIAL TEST ARTIFACT - PDF PARSING PRACTICE
+--------------------------------------------------------------------------------
+Document Title: Automated Invoice and Data Sheet
+Document ID: PDF-INV-2026-8841
+Page 1 of 1
+
+BILL TO:
+Acme Corporation Testing Dept.
+123 Automation Way, Suite 400
+Tech City, TC 90210
+
+ITEM DESCRIPTION                 QTY    UNIT PRICE ($)    TOTAL ($)
+--------------------------------------------------------------------
+1. Headless Browser License       5      150.00            750.00
+2. CI/CD Pipeline Integration     1      450.00            450.00
+3. QA Consulting Hours (10hr)     1      125.00            125.00
+
+--------------------------------------------------------------------
+SUBTOTAL:                                                  1,325.00
+TAX (8.5%):                                                  112.63
+TOTAL AMOUNT DUE:                                          $1,437.63
+--------------------------------------------------------------------
+
+INSTRUCTIONS FOR PDF ROBOTIC PROCESS AUTOMATION (RPA):
+- Extract the Invoice Number: PDF-INV-2026-8841
+- Extract the Total Amount Due: $1,437.63
+- Verify that line item count equals 3.
+- Assert tax calculation correctness (Subtotal * 0.085).
+
+[Digital Signature Verification Block]
+Signed by: Automated Test Runner Bot v4.2
+Timestamp: 2026-10-15T21:55:00Z
+Status: VALID_SIGNATURE
+--------------------------------------------------------------------------------
