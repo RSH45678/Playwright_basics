@@ -58,20 +58,13 @@ import * as fs from 'node:fs/promises';
 // })
 
 test('Download svg file', async ({ page }, testInfo) => {
-  await page.goto(
-    'https://www.playwrightautomation.com/practice.html#section-upload-downloads'
-  );
-
-  // Register the download listener before clicking.
-  // Do not await here: the click still needs to trigger the download.
-  const downloadPromise = page.waitForEvent('download');
-
+  await page.goto('https://www.playwrightautomation.com/practice.html#section-upload-downloads');
   await page.locator('#btn-download-svg').click();
-
-  const download = await downloadPromise;
-
+  const download = await page.waitForEvent('download');
   expect(download.suggestedFilename()).toBe('genxevo-logo.svg');
 
+  /*testInfo.outputPath() creates a path inside the current test's 
+  output directory. To choose your own folder, you can use path.join() with the folder name you want.*/
   // Create a path inside this test's output directory.
   const filePath = testInfo.outputPath(download.suggestedFilename());
 
@@ -81,3 +74,15 @@ test('Download svg file', async ({ page }, testInfo) => {
   // Verify the saved file exists.
   await fs.access(filePath);
 });
+
+test('Download PDF file', async({page})=>{
+  await page.goto('https://www.playwrightautomation.com/practice.html#section-upload-downloads');
+  await page.locator('#btn-download-pdf').click()
+  const download= await page.waitForEvent('download');
+  expect(download.suggestedFilename()).toBe('genxevo-profile-course-guide.pdf');
+  
+
+
+
+
+})
